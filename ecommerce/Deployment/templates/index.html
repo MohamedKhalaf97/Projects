@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v7 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="../static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="../static/css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form action="/predict" method="GET">
+
+					<p style="font-size: 25px;">Reached on time <span style="color: #a4f773"><br>{{reachedOnTime}}</br></span></p>
+
+					<h3>Ecommerce App</h3>
+
+					<p>Ecommerce app for predicting reached on time products. </p>
+
+					<label class="form-group">
+						<input type="number" class="form-control"  name='Customer_care_calls' min=2 max=7 >
+						<span>Customer_care_calls</span>
+					</label>
+					<label class="form-group">
+						<input type="number" class="form-control"  name='Customer_rating' min=1 max=5>
+						<span for="">Customer_rating</span>
+					</label>
+
+					<label class="form-group">
+						<input type="number" class="form-control"  name='Cost_of_the_Product'>
+						<span for="">Cost_of_the_Product</span>
+					</label>
+
+					<label class="form-group">
+						<input type="number" class="form-control"  name='Prior_purchases' min=2 max=10>
+						<span for="">Prior_purchases</span>
+					</label>
+
+					<label class="form-group">
+						<input type="number" class="form-control"  name='Discount_offered'>
+						<span for="">Discount_offered</span>
+					</label>
+
+					<label class="form-group">
+						<input type="number" class="form-control"  name='Weight_in_gms'>
+						<span for="">Weight_in_gms</span>
+					</label>
+
+					<label class="form-group">
+						<span for="">Warehouse_block</span>
+						<select name='Warehouse_block'>
+							<option value="A">A</option>
+							<option value="B">B</option>
+							<option value="C">C</option>
+							<option value="D">D</option>
+							<option value="F">F</option>
+							
+						</select>
+					</label>
+
+					<label class="form-group">
+						<span for="">Mode_of_Shipment</span>
+						<select name='Mode_of_Shipment'>
+							<option value="Flight">Flight</option>
+							<option value="Road">Road</option>
+							<option value="Ship">Ship</option>
+							
+						</select>
+					</label>
+
+					<label class="form-group">
+						<span for="">Product_importance</span>
+						<select name='Product_importance'>
+							<option value="high">High</option>
+							<option value="low">Low</option>
+							<option value="medium">Medium</option>
+							
+						</select>
+					</label>
+
+					<label class="form-group">
+						<span for="">Gender</span>
+						<select name='Gender'>
+							<option value="F">Female</option>
+							<option value="M">Male</option>
+							
+						</select>
+					</label>
+
+					<button>Predict
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+					<br>
+					<hr>
+				</form>
+			</div>
+		</div>
+		
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
